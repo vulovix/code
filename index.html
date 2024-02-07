@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<!-- https://www.npmjs.com/package/highlighted-code -->
+
+<body class="fade-in">
+    <textarea id="textarea" spellcheck="false" is="highlighted-code" language="typescript" tab-size="2">
+/* made with copylot.dev */
+
+</textarea>
+    <script type="module" defer>
+        const defaultTheme = "github-dark";
+        const defaultLanguage = "javascript";
+        const theme = localStorage.getItem("theme") ? localStorage.getItem("theme") || defaultTheme : defaultTheme;
+        const language = localStorage.getItem("language") ? localStorage.getItem("language") || defaultLanguage : defaultLanguage;
+        (async ({ chrome, netscape }) => { if (!chrome && !netscape) await import('https://unpkg.com/@ungap/custom-elements'); const { default: HighlightedCode } = await import('https://unpkg.com/highlighted-code'); HighlightedCode.useTheme(theme); document.getElementsByTagName("textarea")[0].setAttribute("language", language); })(self);
+    </script>
+</body>
+
+</html>
