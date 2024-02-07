@@ -72,16 +72,21 @@
 body {
     color: #5c6370;   
     background: #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    /* width: 640px; */
     width: 100%;
+    margin: 0 auto;
     resize: none;
     border: none;
     outline: none;
-    padding: 1rem;
+    padding: 1rem 1rem;
     height: 100vh;
     line-height: 1.6;
 }

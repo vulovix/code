@@ -21,13 +21,6 @@ document.addEventListener(
       e.preventDefault();
       copyToClipboard(getTextToCopy());
     }
-    if (
-      e.key === "c" &&
-      (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)
-    ) {
-      e.preventDefault();
-      copyToClipboard(getTextToCopy());
-    }
   },
   false
 );
