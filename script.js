@@ -1,7 +1,5 @@
 window.addEventListener("load", (event) => {
-  console.log("load");
   const storage = localStorage.getItem("Copylot");
-  console.log(storage);
   if (storage) {
     document.getElementsByTagName("textarea")[0].value = storage;
   }
