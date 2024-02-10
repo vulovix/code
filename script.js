@@ -1,22 +1,20 @@
-window.addEventListener("load", (event) => {
-  const storage = localStorage.getItem("Copylot");
+window.addEventListener("load", () => {
+  const storage = localStorage.getItem("xOS_Code");
+  const editor = document.querySelector("#editor");
   if (storage) {
-    document.getElementsByTagName("textarea")[0].value = storage;
+    editor.value = storage;
   }
-  document.getElementsByTagName("textarea")[0].focus();
+  editor.focus();
 });
 window.addEventListener("beforeunload", () => {
   const currentText = getTextToCopy();
   saveToStorage(currentText);
 });
 function copyToClipboard(text) {
-  window.navigator.clipboard
-    .writeText(text)
-    .then(() => console.log("Copied to clipboard!"))
-    .catch(() => null);
+  window.navigator.clipboard.writeText(text).catch(() => null);
 }
 function saveToStorage(text) {
-  localStorage.setItem("Copylot", text);
+  localStorage.setItem("xOS_Code", text);
 }
 function getTextToCopy() {
   const textToCopy = document.querySelector(".highlighted-code");

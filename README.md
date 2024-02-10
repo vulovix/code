@@ -1,10 +1,10 @@
-# Copylot
+# Code
 
-Your personalized Copylot.
+Your personalized code editor.
 
 This tool lets you create code snippets and copy it to clipboard.
 
-It's useful when you need to have long meetings and write snippets, write pseudo code or even write snippets in different programming languages. This way you don't have to use Console, just enter Copylot and start writing.
+It's useful when you need to have long meetings and write snippets, write pseudo code or even write snippets in different programming languages. This way you don't have to use Console, just enter Code and start writing.
 
 It uses `highlight.js` which means that syntax is really nice colored!
 
@@ -19,4 +19,4 @@ You can modify theme and language by going to LocalStorage and adding these keys
 
 ### Resources
 
-[favicon.png](https://www.flaticon.com/free-icon/chat-bot_13330867?related_id=13330867)
+[favicon.png](https://www.flaticon.com/free-icon/chat-bot_13330867)
