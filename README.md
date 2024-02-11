@@ -19,4 +19,4 @@ You can modify theme and language by going to LocalStorage and adding these keys
 
 ### Resources
 
-[favicon.png](https://www.flaticon.com/free-icon/code_1383415)
+[favicon.png](https://www.flaticon.com/free-icon/code_4997543)
